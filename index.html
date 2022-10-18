@@ -20,7 +20,7 @@
             <form method="post" action="http://httpbin.org/post" enctype="multipart/form-data">
                 <div class="log-em">
                     <label for="fio">ФИО</label>
-                    <input type="text" name="fio" id="fio">
+                    <input type="text" name="fio" id="fio" required>
                 </div>
                 <div class="log-em">
                     <label for="email">email</label>
@@ -30,19 +30,19 @@
                     <legend>От куда вы узнали о нас?</legend>
 
                     <div>
-                        <input type="radio" id="friends" name="source" value="friends" checked>
+                        <input type="radio" id="friends" name="source" value="friends" checked required>
                         <label for="friends">Рассказали друзья</label>
                     </div>
 
                     <div>
-                        <input type="radio" id="internet" name="source" value="internet">
+                        <input type="radio" id="internet" name="source" value="internet" required>
                         <label for="internet">Реклама в интернете</label>
                     </div>
                 </fieldset>
 
                 <div>
                     <label for="categorty">Категория обращения</label>
-                    <select name="categorty_id" id="categorty">
+                    <select name="categorty_id" id="categorty" required>
                         <option value="" selected>Выберите один из вариантов</option>
                         <option value="1">Жалоба</option>
                         <option value="2">Предложение</option>
